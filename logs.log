@@ -1,0 +1,89 @@
+2022-08-11 07:32:56,846:INFO:PyCaret NLP Module
+2022-08-11 07:32:56,847:INFO:version 2.2.2
+2022-08-11 07:32:56,847:INFO:Initializing setup()
+2022-08-11 07:32:56,847:INFO:USI: 7e15
+2022-08-11 07:32:56,847:INFO:setup(data=(1533, 1), target=cleaned, custom_stopwords=None, html=True, session_id=123, log_experiment=False,
+                    experiment_name=None, log_plots=False, log_data=False, verbose=True)
+2022-08-11 07:32:56,847:INFO:Checking environment
+2022-08-11 07:32:56,847:INFO:python_version: 3.9.9
+2022-08-11 07:32:56,847:INFO:python_build: ('tags/v3.9.9:ccb0e6a', 'Nov 15 2021 18:08:50')
+2022-08-11 07:32:56,847:INFO:machine: AMD64
+2022-08-11 07:32:56,847:INFO:platform: Windows-10-10.0.22000-SP0
+2022-08-11 07:32:56,849:INFO:Memory: svmem(total=34165383168, available=17512181760, percent=48.7, used=16653201408, free=17512181760)
+2022-08-11 07:32:56,849:INFO:Physical Core: 6
+2022-08-11 07:32:56,849:INFO:Logical Core: 12
+2022-08-11 07:32:56,849:INFO:Checking libraries
+2022-08-11 07:32:56,849:INFO:pd==1.4.3
+2022-08-11 07:32:56,849:INFO:numpy==1.22.4
+2022-08-11 07:32:57,328:INFO:gensim==4.2.0
+2022-08-11 07:32:57,841:INFO:spacy==3.4.1
+2022-08-11 07:32:58,232:INFO:nltk==3.7
+2022-08-11 07:32:58,250:INFO:textblob==0.17.1
+2022-08-11 07:32:58,293:INFO:pyLDAvis==3.3.1
+2022-08-11 07:32:58,344:INFO:wordcloud==1.8.2.2
+2022-08-11 07:32:58,588:INFO:mlflow==1.27.0
+2022-08-11 07:32:58,588:INFO:Checking Exceptions
+2022-08-11 07:32:59,023:INFO:Preloading libraries
+2022-08-11 07:32:59,058:INFO:Preparing display monitor
+2022-08-11 07:32:59,073:INFO:Importing libraries
+2022-08-11 07:32:59,073:INFO:Declaring global variables
+2022-08-11 07:32:59,073:INFO:Input provided : dataframe
+2022-08-11 07:32:59,073:INFO:session_id set to : 123
+2022-08-11 07:32:59,073:INFO:Copying training dataset
+2022-08-11 07:32:59,074:INFO:Importing stopwords from nltk
+2022-08-11 07:32:59,245:INFO:No custom stopwords defined
+2022-08-11 07:32:59,245:INFO:Removing numeric characters from the text
+2022-08-11 07:32:59,259:INFO:Removing special characters from the text
+2022-08-11 07:32:59,312:INFO:Tokenizing Words
+2022-08-11 07:32:59,408:INFO:Removing stopwords
+2022-08-11 07:32:59,502:INFO:Extracting Bigrams
+2022-08-11 07:32:59,621:INFO:Extracting Trigrams
+2022-08-11 07:32:59,832:INFO:Lemmatizing tokens
+2022-08-11 07:33:04,619:INFO:Removing stopwords after lemmatizing
+2022-08-11 07:33:04,701:INFO:Creating corpus and dictionary
+2022-08-11 07:33:04,757:INFO:Compiling processed text
+2022-08-11 07:33:04,759:INFO:Compiling information grid
+2022-08-11 07:33:05,157:INFO:setup() succesfully completed......................................
+2022-08-11 07:33:05,157:INFO:Initializing create_model()
+2022-08-11 07:33:05,158:INFO:create_model(model=lda, multi_core=True, num_topics=10, verbose=True, system=True)
+2022-08-11 07:33:05,158:INFO:Checking exceptions
+2022-08-11 07:33:05,158:INFO:Preloading libraries
+2022-08-11 07:33:05,158:INFO:Preparing display monitor
+2022-08-11 07:33:05,167:INFO:Defining topic model
+2022-08-11 07:33:05,167:INFO:Model: Latent Dirichlet Allocation
+2022-08-11 07:33:05,167:INFO:Defining num_topics parameter
+2022-08-11 07:33:05,167:INFO:num_topics set to: 10
+2022-08-11 07:33:05,171:INFO:LDA multi_core enabled
+2022-08-11 07:33:05,171:INFO:LdaMulticore imported successfully
+2022-08-11 07:33:09,342:INFO:LdaMulticore trained successfully
+2022-08-11 07:33:09,344:INFO:LdaMulticore<num_terms=3911, num_topics=10, decay=0.5, chunksize=100>
+2022-08-11 07:33:09,344:INFO:create_model() succesfully completed......................................
+2022-08-11 07:33:09,345:INFO:Initializing assign_model()
+2022-08-11 07:33:09,345:INFO:assign_model(model=LdaMulticore<num_terms=3911, num_topics=10, decay=0.5, chunksize=100>, verbose=True)
+2022-08-11 07:33:09,345:INFO:Determining model type
+2022-08-11 07:33:09,345:INFO:model type: lda
+2022-08-11 07:33:09,345:INFO:Checking exceptions
+2022-08-11 07:33:09,345:INFO:Preloading libraries
+2022-08-11 07:33:09,345:INFO:Preparing display monitor
+2022-08-11 07:33:10,121:INFO:(3005, 13)
+2022-08-11 07:33:10,121:INFO:assign_model() succesfully completed......................................
+2022-08-11 07:33:10,127:INFO:Initializing plot_model()
+2022-08-11 07:33:10,127:INFO:plot_model(model=LdaMulticore<num_terms=3911, num_topics=10, decay=0.5, chunksize=100>, plot=frequency, topic_num=Topic 5, save=False, system=True)
+2022-08-11 07:33:10,127:INFO:Checking exceptions
+2022-08-11 07:33:10,127:INFO:Importing libraries
+2022-08-11 07:33:10,537:INFO:save_param set to False
+2022-08-11 07:33:10,537:INFO:plot type: frequency
+2022-08-11 07:33:10,537:INFO:Rendering Visual
+2022-08-11 07:33:10,537:INFO:SubProcess assign_model() called ==================================
+2022-08-11 07:33:10,537:INFO:Initializing assign_model()
+2022-08-11 07:33:10,537:INFO:assign_model(model=LdaMulticore<num_terms=3911, num_topics=10, decay=0.5, chunksize=100>, verbose=False)
+2022-08-11 07:33:10,537:INFO:Determining model type
+2022-08-11 07:33:10,537:INFO:model type: lda
+2022-08-11 07:33:10,537:INFO:Checking exceptions
+2022-08-11 07:33:10,537:INFO:Preloading libraries
+2022-08-11 07:33:10,538:INFO:Preparing display monitor
+2022-08-11 07:33:11,391:INFO:(3005, 13)
+2022-08-11 07:33:11,391:INFO:assign_model() succesfully completed......................................
+2022-08-11 07:33:11,392:INFO:SubProcess assign_model() end ==================================
+2022-08-11 07:33:11,396:INFO:Fitting CountVectorizer()
+2022-08-11 07:33:11,396:WARNING:Invalid topic_num param or empty Vocab. Try changing Topic Number.
